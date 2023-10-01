@@ -10,6 +10,7 @@ spring:
     user:
       name: user1
       password: password
+      roles: user, admin
     oauth2:
       authorizationserver:
         client:

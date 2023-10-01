@@ -1,8 +1,14 @@
 package sample.config;
 
+import java.util.Set;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.oauth2.server.authorization.OAuth2TokenType;
 import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
+import org.springframework.security.oauth2.server.authorization.token.JwtEncodingContext;
+import org.springframework.security.oauth2.server.authorization.token.OAuth2TokenCustomizer;
 
 @Configuration(proxyBeanMethods = false)
 public class AuthorizationServerConfig {
@@ -17,6 +23,18 @@ public class AuthorizationServerConfig {
 				.tokenRevocationEndpoint("/oauth2/v1/revoke")
 				.build();
 		// @formatter:on
+	}
+
+	@Bean
+	public OAuth2TokenCustomizer<JwtEncodingContext> jwtTokenCustomizer() {
+		return (context) -> {
+			if (OAuth2TokenType.ACCESS_TOKEN.equals(context.getTokenType())) {
+				context.getClaims().claims((claims) -> {
+					Set<String> authorities = AuthorityUtils.authorityListToSet(context.getPrincipal().getAuthorities());
+					claims.put("authorities", authorities);
+				});
+			}
+		};
 	}
 
 }
