@@ -40,7 +40,9 @@ spring:
             client-name: messaging-client-client-credentials
         provider:
           spring:
-            issuer-uri: http://localhost:9000
+            authorization-uri: https://localhost:8443/oauth2/v1/authorize
+            token-uri: http://localhost:9000/oauth2/v1/token
+            jwk-set-uri: http://localhost:9000/oauth2/jwks
 
 messages:
   base-uri: http://127.0.0.1:8090/messages
