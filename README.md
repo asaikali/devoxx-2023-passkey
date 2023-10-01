@@ -1,6 +1,6 @@
 # devoxx-2023-passkey
 
-This repo contains the demo code from the Devoxx Beligum 2023 Deep Dive Talk **Implementing passwordless logins using Passkey, WebAuthn protocols and Spring Authorization Server**
+This repo contains the demo code from the Devoxx Beligum 2023 Deep Dive Talk **"Implementing passwordless logins using Passkey, WebAuthn protocols and Spring Authorization Server"**
 
 ## Abstract
 
