@@ -35,6 +35,8 @@ spring:
                 - "message.read"
                 - "message.write"
             require-authorization-consent: true
+            token:
+              access-token-time-to-live: 90s
           messaging-client-opaque:
             registration:
               client-id: "messaging-client-opaque"
