@@ -35,3 +35,23 @@ spring:
                 - "message.read"
                 - "message.write"
             require-authorization-consent: true
+          messaging-client-opaque:
+            registration:
+              client-id: "messaging-client-opaque"
+              client-secret: "{noop}secret2"
+              client-authentication-methods:
+                - "client_secret_basic"
+              authorization-grant-types:
+                - "authorization_code"
+                - "refresh_token"
+                - "client_credentials"
+              redirect-uris:
+                - "http://127.0.0.1:8080/authorized"
+              post-logout-redirect-uris:
+                - "http://127.0.0.1:8080/logged-out"
+              scopes:
+                - "message.read"
+                - "message.write"
+            require-authorization-consent: true
+            token:
+              access-token-format: reference
