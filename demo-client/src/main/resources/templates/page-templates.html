@@ -60,6 +60,11 @@
             </table>
         </div>
     </div>
+    <div th:fragment="tokens" th:if="${accessToken}" class="row py-5 justify-content-start">
+        <h3>Access Token value</h3>
+        <p th:text="${accessToken}" class="text-wrap text-break"></p>
+        <p>🔗 View token on <a th:href="${'https://jwt.io/#debugger-io?token=' + accessToken}" target="_blank">https://jwt.io</a>.</p>
+    </div>
 </div>
 <script src="/webjars/bootstrap/js/bootstrap.bundle.min.js" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <script src="/webjars/jquery/jquery.min.js" th:src="@{/webjars/jquery/jquery.min.js}"></script>
