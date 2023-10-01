@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>quotes</artifactId>
+	<artifactId>passkey-basics</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>quotes</name>
-	<description>quotes</description>
+	<name>passkey-basics</name>
+	<description>basics of how to setup passkey</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
