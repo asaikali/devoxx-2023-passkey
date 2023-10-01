@@ -11,10 +11,10 @@ What if users can create an account and log into your application without ever h
 
 There are 4 branches in this repo corresponidng to the 4 parts of the talk.
 
-| branch                    | Purpose         
+| Branch name               | Purpose         
 | ------------------------- | -------------------------------------------------------------------  | 
-| 1-the-app                 | sample application with on security                                  |
+| 1-the-app                 | sample application with no security                                  |
 | 2-passkey-basics          | sample to learn the basics of passkey                                |
 | 3-authserver-basics       | sample to learn the basics of the spring authorizaton server         |
-| 3-authserver-with-passkey | sample with spring authoriaztion server that has support for passkey |
+| 3-authserver-with-passkey | sample  spring authoriaztion server that has support for passkey     |
 
