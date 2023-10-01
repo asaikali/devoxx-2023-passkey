@@ -16,6 +16,7 @@ dependencies {
 	implementation "org.springframework.boot:spring-boot-starter-web"
 	implementation "org.springframework.boot:spring-boot-starter-security"
 	implementation "org.springframework.boot:spring-boot-starter-oauth2-authorization-server"
+	implementation "com.yubico:webauthn-server-core:2.5.0"
 
 	runtimeOnly "com.h2database:h2"
 
