@@ -1,0 +1,5 @@
+rootProject.name = 'devoxx-2023-passkey'
+
+include 'default-authorizationserver'
+include 'demo-client'
+include 'messages-resource'
