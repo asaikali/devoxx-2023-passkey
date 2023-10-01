@@ -16,5 +16,5 @@ There are 4 branches in this repo corresponding to the various parts of the talk
 | 1-the-app                 | sample application with no security                                  |
 | 2-passkey-basics          | sample to learn the basics of passkey                                |
 | 3-authserver-basics       | sample to learn the basics of the spring authorizaton server         |
-| 4-authserver-with-passkey | sample  spring authoriaztion server that has support for passkey     |
+| 4-authserver-with-passkey | sample spring authoriaztion server that has support for passkey     |
 
