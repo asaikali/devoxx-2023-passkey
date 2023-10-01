@@ -14,7 +14,6 @@ public class QuotesController {
 
   @GetMapping("/random-quote")
   public Quote randomQuote() {
-    Quote result = quoteRepository.findRandomQuote();
-    return result;
+      return quoteRepository.findRandomQuote();
   }
 }

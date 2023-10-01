@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebauthnBasicsApplication {
+public class QuotesApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(WebauthnBasicsApplication.class, args);
+    SpringApplication.run(QuotesApplication.class, args);
   }
 }

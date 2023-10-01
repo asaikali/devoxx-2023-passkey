@@ -14,16 +14,6 @@ class PagesController {
     return "index";
   }
 
-  @GetMapping("/register")
-  String signup() {
-    return "register";
-  }
-
-  @GetMapping("/login")
-  String login() {
-    return "login";
-  }
-
   @GetMapping("/quotes")
   String quotes() {
     return "quotes";
