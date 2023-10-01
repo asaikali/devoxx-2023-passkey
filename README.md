@@ -9,7 +9,7 @@ What if users can create an account and log into your application without ever h
 
 **Branches**
 
-There are 4 branches in this repo corresponidng to the 4 parts of the talk.
+There are 4 branches in this repo corresponding to the various parts of the talk.
 
 | Branch name               | Purpose         
 | ------------------------- | -------------------------------------------------------------------  | 
