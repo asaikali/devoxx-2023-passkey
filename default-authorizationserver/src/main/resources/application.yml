@@ -1,4 +1,13 @@
 server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: default-authorizationserver/keystore.p12
+    key-store-password: changeit
+    key-alias: demo
+
+http:
   port: 9000
 
 logging:
